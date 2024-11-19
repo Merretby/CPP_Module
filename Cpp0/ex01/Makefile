@@ -1,7 +1,7 @@
-NAME = megaphone
+NAME = 
 CC = g++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address
-CFILES = megaphone.cpp
+CFILES = 
 OFILES = $(CFILES:.cpp=.o)
 
 all: $(NAME)
