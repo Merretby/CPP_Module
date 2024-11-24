@@ -1,6 +1,6 @@
 NAME = megaphone
-CC = g++
-CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address
+CC = c++
+CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
 CFILES = megaphone.cpp
 OFILES = $(CFILES:.cpp=.o)
 

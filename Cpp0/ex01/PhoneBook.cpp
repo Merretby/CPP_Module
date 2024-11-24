@@ -90,7 +90,7 @@ void PhoneBook::addContact()
         this->index = 8;
 }
 
-int check_number(std::string i_contact, int index)
+int check_number(std::string i_contact)
 {
     int i;
 
@@ -98,10 +98,10 @@ int check_number(std::string i_contact, int index)
     {
         if (std::cin.eof())
             exit(0);
-        std::cout << "index between 0 and 8 1" << std::endl;
+        std::cout << "index between 0 and 8" << std::endl;
         i_contact.clear();
         std::getline(std::cin, i_contact);
-        return(check_number(i_contact, i));
+        return(check_number(i_contact));
     }
 
     i = (i_contact[0] - 48);
@@ -109,9 +109,10 @@ int check_number(std::string i_contact, int index)
     {
         if (std::cin.eof())
             exit (0);
-        std::cout << "index between 0 and 8  2" << std::endl;
+        std::cout << "index between 0 and 8" << std::endl;
         std::getline(std::cin, i_contact);
         i = (i_contact[0] - 48);
+        return(check_number(i_contact));
     }
     return i;
 }
@@ -138,7 +139,7 @@ void PhoneBook::searchContact()
     std::getline(std::cin, i_contact);
     if (!std::cin)
         exit(0);
-    i = check_number(i_contact, this->index);
+    i = check_number(i_contact);
     if (i < this->index)
     {
         std::cout << "First Name: " << contacts[i].getFirstName() << std::endl;
