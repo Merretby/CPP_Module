@@ -5,7 +5,7 @@ std::string cheackInput(std::string input)
     while (input.empty())
     {
         if(std::cin.eof())
-            exit (0);
+            std::exit (0);
         std::cout << "Please enter a valid input: ";
         std::getline(std::cin, input);
     }
@@ -97,7 +97,7 @@ int check_number(std::string i_contact)
     if(i_contact.length() != 1)
     {
         if (std::cin.eof())
-            exit(0);
+            std::exit(0);
         std::cout << "index between 0 and 8" << std::endl;
         i_contact.clear();
         std::getline(std::cin, i_contact);
@@ -108,7 +108,7 @@ int check_number(std::string i_contact)
     if ((i < 0 || i > 7) && i_contact.length() == 1)
     {
         if (std::cin.eof())
-            exit (0);
+            std::exit (0);
         std::cout << "index between 0 and 8" << std::endl;
         std::getline(std::cin, i_contact);
         i = (i_contact[0] - 48);
@@ -138,7 +138,7 @@ void PhoneBook::searchContact()
     std::cout << "give me the index ";
     std::getline(std::cin, i_contact);
     if (!std::cin)
-        exit(0);
+        std::exit(0);
     i = check_number(i_contact);
     if (i < this->index)
     {
@@ -154,5 +154,5 @@ void PhoneBook::searchContact()
 
 void PhoneBook::exitContact()
 {
-    exit(0);
+    std::exit(0);
 }

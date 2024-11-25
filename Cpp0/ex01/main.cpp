@@ -19,14 +19,14 @@ int main()
     PhoneBook.index = 0;
     start();
     std::getline(std::cin, line);
-    if (line == "EXIT")
-        PhoneBook.exitContact();
     while(!std::cin.eof())
     {
         if(line == "ADD")
             PhoneBook.addContact();
         else if(line == "SEARCH")
             PhoneBook.searchContact();
+        else if (line == "EXIT")
+            PhoneBook.exitContact();
         else
         {
             if (line == "")

@@ -1,13 +1,13 @@
 NAME = megaphone
-CC = c++
-CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
+CXX = c++
+CFXXLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
 CFILES = megaphone.cpp
 OFILES = $(CFILES:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(CFLAGS) $(OFILES) -o $(NAME)
+	$(CXX) $(CFXXLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)
