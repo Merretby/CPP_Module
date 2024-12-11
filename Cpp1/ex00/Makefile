@@ -1,6 +1,6 @@
 NAME = Zombie
 CC = c++
-CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
+CFLAGS = -std=c++98 -Wall -Wextra -Werror
 CFILES = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp 
 OFILES = $(CFILES:.cpp=.o)
 
