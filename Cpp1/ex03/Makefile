@@ -1,7 +1,7 @@
 NAME = Human
 CC = c++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
-CFILES = 
+CFILES = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OFILES = $(CFILES:.cpp=.o)
 
 all: $(NAME)
