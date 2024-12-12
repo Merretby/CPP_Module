@@ -2,22 +2,22 @@
 
 void Harl::debug()
 {
-    std::cout << "Debug messages contain contextual information" << std::endl;
+    std::cout << "[DEBUG]   messages contain contextual information." << std::endl;
 }
 
 void Harl::info()
 {
-    std::cout << "Info messages contain extensive information" << std::endl;
+    std::cout << "[INFO]   messages contain extensive information." << std::endl;
 }
 
 void Harl::warning()
 {
-    std::cout << "Warning messages indicate a potential issues in the system" << std::endl;
+    std::cout << "[WARNING]   messages indicate a potential issues in the system." << std::endl;
 }
 
 void Harl::error()
 {
-    std::cout << "Error messages indicate an unrecoverable error has occurred" << std::endl;
+    std::cout << "[ERROR]   messages indicate an unrecoverable error has occurred." << std::endl;
 }
 
 void Harl::complain(std::string level)
@@ -32,6 +32,7 @@ void Harl::complain(std::string level)
             (this->*functions[i])();
             for(int j = i + 1; j < 4; j++)
             {
+                std::cout << std::endl;
                 (this->*functions[j])();
             }
             return;

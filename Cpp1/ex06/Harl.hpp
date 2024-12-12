@@ -5,6 +5,15 @@
 #include <string>
 
 
+typedef enum e_case
+{
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+    INVALID
+} t_case;
+
 class Harl
 {
     private:
