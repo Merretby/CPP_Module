@@ -1,13 +1,13 @@
 NAME = Zombie
-CC = c++
-CFLAGS = -std=c++98 -Wall -Wextra -Werror
+CXX = c++
+CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
 CFILES = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp 
 OFILES = $(CFILES:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(CFLAGS) $(OFILES) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)

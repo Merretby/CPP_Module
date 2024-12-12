@@ -1,13 +1,13 @@
 NAME = Brain
-CC = c++
-CFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
+CXX = c++
+CXXFLAGS = -std=c++98 -Wall -Wextra -Werror #-g -fsanitize=address -pedantic
 CFILES = main.cpp
 OFILES = $(CFILES:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OFILES)
-	$(CC) $(CFLAGS) $(OFILES) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OFILES) -o $(NAME)
 
 clean:
 	rm -f $(OFILES)
