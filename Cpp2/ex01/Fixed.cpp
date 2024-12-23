@@ -47,7 +47,7 @@ Fixed::Fixed(const double value)
 {
     std::cout << "Float constructor called" << std::endl;
     this->value = roundf(value * (1 << Bits));
-    std::cout << this->value << " "  << value << std::endl;
+    // std::cout << this->value << " "  << value << std::endl;
 }
 
 float Fixed::toFloat(void) const

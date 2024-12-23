@@ -1,7 +1,7 @@
-NAME = 
+NAME = Fixed
 CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
-CFILES = 
+CFILES =  main.cpp Fixed.cpp
 OFILES = $(CFILES:.cpp=.o)
 
 all: $(NAME)
