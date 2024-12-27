@@ -1,6 +1,6 @@
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap() : ClapTrap("Default")
+ScavTrap::ScavTrap() : ClapTrap("Default ScavTrap")
 {
     std::cout << "ScavTrap default constructor called" << std::endl;
     hitpoints = 100;
