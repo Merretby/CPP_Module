@@ -70,9 +70,3 @@ void ClapTrap::beRepaired(unsigned int amount)
     }
 }
 
-void ClapTrap::checkEnergy()
-{
-    std::cout << this->hitpoints << std::endl;
-    std::cout << this->energyPoints << std::endl;
-    std::cout << this->attackDamage << std::endl;
-}

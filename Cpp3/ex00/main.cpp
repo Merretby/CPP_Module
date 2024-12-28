@@ -7,6 +7,4 @@ int main()
     claptrap.attack("a target");
     claptrap.takeDamage(10);
     claptrap.beRepaired(5);
-
-    claptrap.checkEnergy();
 }
